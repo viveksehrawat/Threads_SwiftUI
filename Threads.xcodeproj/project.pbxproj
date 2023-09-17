@@ -11,6 +11,8 @@
 		434E907F2AB6ED5A0096C22D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434E907E2AB6ED5A0096C22D /* Assets.xcassets */; };
 		434E90822AB6ED5A0096C22D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 434E90812AB6ED5A0096C22D /* Preview Assets.xcassets */; };
 		434E90902AB6EDC50096C22D /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E908F2AB6EDC50096C22D /* LoginView.swift */; };
+		434E90922AB6FC560096C22D /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E90912AB6FC560096C22D /* RegisterView.swift */; };
+		434E90942AB6FDD60096C22D /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 434E90932AB6FDD60096C22D /* CustomTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		434E907E2AB6ED5A0096C22D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		434E90812AB6ED5A0096C22D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		434E908F2AB6EDC50096C22D /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		434E90912AB6FC560096C22D /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		434E90932AB6FDD60096C22D /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +92,7 @@
 		434E908A2AB6ED750096C22D /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				434E90932AB6FDD60096C22D /* CustomTextField.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			isa = PBXGroup;
 			children = (
 				434E908F2AB6EDC50096C22D /* LoginView.swift */,
+				434E90912AB6FC560096C22D /* RegisterView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -193,6 +199,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				434E90942AB6FDD60096C22D /* CustomTextField.swift in Sources */,
+				434E90922AB6FC560096C22D /* RegisterView.swift in Sources */,
 				434E90902AB6EDC50096C22D /* LoginView.swift in Sources */,
 				434E907B2AB6ED570096C22D /* ThreadsApp.swift in Sources */,
 			);

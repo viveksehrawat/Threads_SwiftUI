@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  RegisterView.swift
 //  Threads
 //
 //  Created by Vivek Sehrawat on 17/09/23.
@@ -7,13 +7,23 @@
 
 import SwiftUI
 
-struct LoginView: View {
+struct RegisterView: View {
     @State private var email: String = ""
     @State private var password: String = ""
+    @State private var fullName: String = ""
+    @State private var userName: String = ""
+
+    private func styledTextField(_ placeholder: String, text: Binding<String>) -> some View {
+          TextField(placeholder, text: text)
+              .font(.subheadline)
+              .padding(12)
+              .background(Color(.systemGray6))
+              .cornerRadius(10)
+              .padding(.horizontal, 24)
+      }
     
     var body: some View {
         
-        NavigationStack{
             VStack{
                 Spacer()
                 Image("threads")
@@ -24,9 +34,16 @@ struct LoginView: View {
                 VStack{
                     TextField("Enter your email", text: $email)
                         .modifier(CustomTextField())
-
                     
                     SecureField("Enter your password", text: $password)
+                        .modifier(CustomTextField())
+
+                    
+                    TextField("Enter your full name", text: $fullName)
+                        .modifier(CustomTextField())
+
+                    
+                    TextField("Enter your user name", text: $userName)
                         .modifier(CustomTextField())
 
                     
@@ -58,7 +75,7 @@ struct LoginView: View {
                 
                 Divider()
                 NavigationLink{
-                    RegisterView()
+                    Text("Sign up")
                 } label: {
                     HStack(spacing: 3){
                         Text("Don't have an account ?")
@@ -73,12 +90,12 @@ struct LoginView: View {
                 }
             }
             .padding()
-        }
+        
     }
 }
 
-struct LoginView_Previews: PreviewProvider {
+struct RegisterView_Previews: PreviewProvider {
     static var previews: some View {
-        LoginView()
+        RegisterView()
     }
 }
